@@ -3,6 +3,7 @@ import styles from './Column.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 import Creator from '../Creator/Creator.js';
+import Icon from '../Icon/Icon.js';
 import {settings} from '../../data/dataStore';
 
 class Column extends React.Component {
@@ -31,7 +32,9 @@ class Column extends React.Component {
   render() {
     return (
       <section className={styles.component}>
-        <h3 className={styles.title}>{this.props.title}</h3>
+        <h3 className={styles.title}>{this.props.title}
+          <span className={styles.icon}><Icon name={this.props.icon} /></span>
+        </h3>
         <div className={styles.cards}>
           {this.state.cards.map(({key, ...cardProps}) => (
             <Card key={key} {...cardProps} />
