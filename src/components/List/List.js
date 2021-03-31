@@ -16,6 +16,7 @@ class List extends React.Component {
     title: PropTypes.node.isRequired,
     description: PropTypes.node,
     columns: PropTypes.array,
+    image: PropTypes.node,
   }
   static defaultProps = {
     description: settings.defaultListDescription,
@@ -30,9 +31,9 @@ class List extends React.Component {
             key: state.columns.length ? state.columns[state.columns.length-1].key+1 : 0,
             title,
             icon: 'list-alt',
-            cards: []
-          }
-        ]
+            cards: [],
+          },
+        ],
       }
     ));
   }
@@ -40,20 +41,20 @@ class List extends React.Component {
   render() {
     return (
       <section className={styles.component}>
-          <Hero titleText={this.props.title} imagePicture={this.props.image}/>
-          <div className={styles.description}>
+        <Hero titleText={this.props.title} imagePicture={this.props.image}/>
+        <div className={styles.description}>
           {ReactHtmlParser(this.props.description)}
-          </div>
-          <div className={styles.columns}>
-            {this.state.columns.map(({key, ...columnProps}) => (
-              <Column key={key} {...columnProps} />
-            ))}
-          </div>
-          <div className={styles.creator}>
-              <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>
-          </div>
+        </div>
+        <div className={styles.columns}>
+          {this.state.columns.map(({key, ...columnProps}) => (
+            <Column key={key} {...columnProps} />
+          ))}
+        </div>
+        <div className={styles.creator}>
+          <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/>
+        </div>
       </section>
-    )
+    );
   }
 }
 
