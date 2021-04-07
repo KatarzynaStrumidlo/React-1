@@ -10,6 +10,9 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+  header: {
+    defaultIcon: 'rocket',
+  },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
 };
@@ -19,10 +22,22 @@ export const pageContents = {
   subtitle: 'A simple to-do app, with lists, columns and cards',
 };
 
+export const FAQContents = {
+  title: 'FAQ',
+  image: 'src/images/to_do_app.jpg',
+  description: 'Frequently Asked Questions',
+};
+
+export const infoContents = {
+  title: 'Info',
+  image: 'src/images/to_do_app.jpg',
+  description: 'Information about page',
+};
+
 export const listData = {
   title: 'Things to do <sup>soon!</sup>',
   description: 'Interesting things I want to check out!',
-  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  image: 'src/images/to_do_app.jpg',
   columns: [
     {
       key: 0,
