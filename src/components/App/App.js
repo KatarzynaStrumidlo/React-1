@@ -3,6 +3,7 @@ import Home from '../Home/HomeContainer';
 import Info from '../Info/Info';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout';
+
 const App = () => (
   <BrowserRouter>
     <MainLayout>
