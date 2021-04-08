@@ -13,7 +13,7 @@ const FAQ = () => (
 );
 
 FAQ.propTypes = {
-  title: PropTypes.node.isRequired,
+  title: PropTypes.node,
   image: PropTypes.node,
   description: PropTypes.node,
 };
