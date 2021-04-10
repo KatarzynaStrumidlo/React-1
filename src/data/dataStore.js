@@ -24,20 +24,20 @@ export const pageContents = {
 
 export const FAQContents = {
   title: 'FAQ',
-  image: 'src/images/to_do_app.jpg',
+  image: 'https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   description: 'Frequently Asked Questions',
 };
 
 export const infoContents = {
   title: 'Info',
-  image: 'src/images/to_do_app.jpg',
+  image: 'https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   description: 'Information about page',
 };
 
 export const listData = {
   title: 'Things to do <sup>soon!</sup>',
   description: 'Interesting things I want to check out!',
-  image: 'src/images/to_do_app.jpg',
+  image: 'https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   columns: [
     {
       key: 0,
@@ -92,7 +92,19 @@ const lists = [
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
-    image: 'src/images/to_do_app.jpg',
+    image: 'https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  },
+  {
+    id: 'list-2',
+    title: 'Things to do <sup>now</sup>',
+    description: 'Things I must do as fast as possible',
+    image: 'https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  },
+  {
+    id: 'list-3',
+    title: 'Things to do',
+    description: 'Things that I would like to do',
+    image: 'https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   },
 ];
 
