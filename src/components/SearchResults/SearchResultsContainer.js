@@ -2,14 +2,11 @@ import {connect} from 'react-redux';
 import SearchResults from './SearchResults';
 import {getCardsForSearchResults} from '../../redux/cardsRedux.js';
 
-const mapStateToProps = (state, props) => ({
-  cards: getCardsForSearchResults(state, props),
-});
+const mapStateToProps = (state, props) => {
+  const searchString = props.match.params.searchString;
+  return {
+    cards: getCardsForSearchResults(state, searchString),
+  };
+};
 
-const mapDispatchToProps = (dispatch, props) => title =>
-  dispatch({
-    columnId: props.id, 
-    title,
-  });
-
-export default connect(mapStateToProps, mapDispatchToProps)(SearchResults);
+export default connect(mapStateToProps)(SearchResults);
